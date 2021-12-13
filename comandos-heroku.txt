@@ -1,0 +1,27 @@
+heroku create // cria um app
+heroku apps:create (name) // cria um app com nome (name)
+
+git push heroku master // update
+git push heroku (branch):master // update da branch (branch) para o heroku
+
+heroku ps // lista os dynos rodando
+
+heroku ps:scale web=1 // escala a aplicação
+
+heroku open (subpagina) // abre a pagina
+
+heroku logs --tail // mostra os logs
+
+heroku local // starta o app localmente ( em http://localhost:5000 )
+
+heroku addons:create heroku-postgresql:hobby-dev // adicionar postgresql
+
+heroku pg:psql // conectar o heroku com o PGSQL local.
+				// ver https://devcenter.heroku.com/articles/getting-started-with-nodejs#provision-a-database
+				// para mais informações
+
+heroku run bash // roda o console/terminal de um one-off dyno // exit pra sair
+
+heroku config:set TIMES=2 // seta uma variavel de ambiente
+
+heroku config // mostra as variaveis de ambiente // pra usar use process.env.TIMES no codigo
