@@ -1,7 +1,7 @@
 heroku create // cria um app
 heroku apps:create (name) // cria um app com nome (name)
 
-git push heroku master // update
+git push heroku main // update
 git push heroku (branch):master // update da branch (branch) para o heroku
 
 heroku ps // lista os dynos rodando
